@@ -1,0 +1,147 @@
+@font-face {
+font-family: 'Wisdom Script';
+src: local('fonts/wisdom-script.otf') format('opentype');
+}
+
+@font-face {
+font-family: 'Myriad Pro Regular';
+font-style: normal;
+font-weight: normal;
+src: local('fonts/myriad-pro.woff') format('woff');
+}
+
+/*** BASE - anything that is consistent throughout ***/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+}
+    h1, h2, h3, h4 {
+        color: black;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    h1 {    
+        font-size: 30px;
+        line-height: 23px;
+    }
+    h2 {
+        font-size: 18px;
+        line-height: 23px;
+        color: #77a466;
+    }
+    h3 {
+        font-size: 12px;
+        line-height: 25px;
+        padding: 10px 0 3px 0;
+    }
+    p {
+        font-size: 16px;
+    }
+    .full-width {
+        width: 1200px;
+        margin: 0 auto; /*margin auto centers page*/
+    }
+    .half-width {
+        width: 600px;
+        float: left;
+        margin: 0 auto;
+}
+
+/*** HEADER ***/
+
+header {
+    height: 400px;
+    margin: 0 auto;
+}
+    h1 {
+        padding: 40px 0px;
+    }
+    h1 span {
+        color: #77a466;
+    }
+    nav {
+        float: right;
+        padding: 45px 0px;
+        width: 610px;
+    }
+    nav ul li {
+        display: inline-block;
+    }
+    nav ul li a {
+        color: #77a466;
+        font-size: 14px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 700;
+        padding-left: 25px;
+    }
+
+    img#hero {
+        border-top: 3px 0px solid #77a466;
+        border-bottom: 3px solid #77a466;
+    }
+
+/*** MAIN CSS ***/
+
+.top-container h2 {
+    padding: 45px 0 0 0;
+}
+.top-container p {
+    line-height: 25px;
+    margin: 0 0 35px 0;
+    width: 1153px;
+} 
+    .container-one, 
+    .container-two,
+    .container-three {
+        width: 399px;
+        height: 210px;
+        float: left;
+        border-top: 1px solid #dedbdc;
+    }
+    .container-one,
+    .container-two {
+        border-right: 1px solid #dedbdc;
+
+    }
+    .container-two h3,
+    .container-three h3{
+        padding-left: 30px;
+    }
+
+        .container-one ul {
+            list-style-type: none;
+            padding: 0px;
+        }
+        .container-one li {
+            font-size: 16px;
+            line-height: 18px;
+            color: #77a466;
+            padding: 0 0 15px 0;
+            font-family: 'Myriad Pro Regular'
+        }
+    .container-two p {
+        line-height: 21px;
+        width: 329px;
+        padding-left: 30px;
+    }
+    .container-three p {
+        font-family: 'Myriad Pro Regular';
+        line-height: 24px;
+        padding-left: 30px;
+    }
+
+
+footer {
+    height: 80px;
+    clear: both;
+    text-align: center;
+    border-top: 1px solid #f0eef0;
+    padding-top: 10px;
+}
+footer h4 span {
+    font-family: 'Wisdom Script';
+    color: #77a466;
+    text-transform: lowercase;
+}
